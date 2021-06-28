@@ -1,0 +1,19 @@
+diff --git a/event.c b/event.c
+index 8dd4345..ee94b00 100644
+--- a/event.c
++++ b/event.c
+@@ -463,6 +463,14 @@ static void parse_pmsr_ftm_data(struct nlattr *data)
+ 	PFTM(u64, DIST_VARIANCE, unsigned);
+ 	PFTM(u64, DIST_SPREAD, unsigned);
+ 
++	if (!ftm[NL80211_PMSR_FTM_RESP_ATTR_DIST_AVG] \
++		&& ftm[NL80211_PMSR_FTM_RESP_ATTR_RTT_AVG]){
++		signed long long dist_avg = (signed long long)nla_get_u64( \
++			ftm[NL80211_PMSR_FTM_RESP_ATTR_RTT_AVG]);
++		dist_avg = dist_avg * 100 / 6666;
++		printf("      DEBUG_DIST_AVG: %lld\n", dist_avg );
++	}
++
+ 	if (ftm[NL80211_PMSR_FTM_RESP_ATTR_TX_RATE]) {
+ 		char buf[100];
+ 
