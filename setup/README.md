@@ -2,47 +2,15 @@
 
 We provide an overview of the various setup and configurations we confirmed to work, and provide some practical tips and tricks.
 
-## Hardware 
-
-#### Intel Wi-Fi Cards
-
-We confirm the following Intel cards to work, on a variety of systems.
-
-| Host Device | Wi-Fi Card | Linux Kernel | Driver <sup>1,2 | Firmware <sup>3 | iw <sup>4 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Compulab WILD | Intel AC-8260 | Version 4.14.41 | Core 33 | Version 36 | Patched <sup>5 |
-| NVIDIA Jetson Nano | Intel AC-8265 | Version 4.9.140 | Core 33 | Version 34, 36 | Patched <sup>5 |
-| NVIDIA Jetson Nano | Intel AX-200 | Version 4.9.140 | Core 50 | Version 53 | Version 5.4 |
-| Dell Latitude E5470 | Intel AX-200 | Version 5.4.0 | Core 56 | Version 53, 55, 57, 58 | Version 5.8 |
-| Lenovo ThinkPad P1 | Intel AX-200 | Version 5.0.0 | Core 56 | Version 53, 55, 57, 58, 59 | Version 5.8 |
-| Compulab WILD | Intel AX-200 | Version 5.8.0 | Core 59 | Version 59 | Version 5.8 |
-| Compulab WILD | Intel AX-210 | Version 5.11.0 | Core 62 | Version 62, 63 | Version 5.9 |
-
-<sup>1</sup> https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
-
-<sup>2</sup> https://git.kernel.org/pub/scm/linux/kernel/git/iwlwifi/backport-iwlwifi.git/
-
-<sup>3</sup> https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/
-
-<sup>4</sup> https://git.kernel.org/pub/scm/linux/kernel/git/jberg/iw.git
-
-<sup>5</sup> http://www.winlab.rutgers.edu/~gruteser/projects/ftm/Setups.htm
-
-In order to enable support for Wi-Fi FTM, see [instructions for Intel Wi-Fi Cards](INTEL.md). 
-
-#### Smartphones
-
-| Smartphone | Wi-Fi Card | Notes |
-| :--- | :--- | :--- |
-| Google Pixel 4 XL | Qualcomm Snapdragon 855 | [WifiRttScan](https://play.google.com/store/apps/details?id=com.google.android.apps.location.rtt.wifirttscan) can be used to use measurements ([source](https://github.com/android/connectivity-samples/tree/main/WifiRttScan)). |
+Are you configuring Wi-Fi FTM on an Intel Card? See the detailed [instructions for Intel Wi-Fi Cards](INTEL.md).
 
 ## Setting up a Wi-Fi FTM Initiator
 
-On Android, [WifiRttScan](https://play.google.com/store/apps/details?id=com.google.android.apps.location.rtt.wifirttscan) can be used to initiate distance measurements.
+On Android, [WifiRttScan](https://play.google.com/store/apps/details?id=com.google.android.apps.location.rtt.wifirttscan) can be used to initiate distance measurements ([source](https://github.com/android/connectivity-samples/tree/main/WifiRttScan)).
 
 The following configuration assumes a Linux-based system.
 
-#### Configuration File
+#### Configuration
 Using ```iw``` Version 5.9, a configuration file has the following options:
 ```
 dev <devname> measurement ftm_request <config-file> [timeout=<seconds>] [randomise[=<addr>/<mask>]]
@@ -83,9 +51,14 @@ wdev 0x1 (phy #0): peer measurement complete
 - Need help converting picoseconds to distance at speed of light? https://jumk.de/math-physics-formulary/speed-of-light.php
 
 ## Setting up a Wi-Fi FTM Responder
-Wi-Fi FTM Responders can be set up using ```hostapd``` Version 2.9 ([source](https://w1.fi/hostapd/)). 
+Wi-Fi FTM Responders can be set up using ```hostapd``` Version 2.9 ([reference](https://w1.fi/hostapd/)). 
 
-#### Configuration File
+If supported, the card will advertise this in its extended features (use ```iw dev``` to identify your physical interface):
+```
+iw phy phy0 info | grep ENABLE_FTM_RESPONDER
+```
+
+#### Configuration
 For example, a minimalistic configuration file is the following:
 ```
 driver=nl80211
@@ -99,7 +72,7 @@ ieee80211n=1
 ftm_responder=1
 ftm_initiator=0
 ```
-Curently we are unable to set up a 5 GHz network.
+Curently we are unable to set up a 5 GHz network with support for Wi-Fi FTM.
 
 #### Execution
 ```
@@ -119,6 +92,10 @@ For example, configure interface wlan0 to channel 149 with 80 MHz in bandwidth:
 In Wireshark, one can filter for Wi-Fi FTM action frames:
 ```
 wlan.fixed.publicact == 0x20 || wlan.fixed.publicact == 0x21
+```
+In Wireshark, one can filter for Wi-Fi FTM Responder support:
+```
+wlan.extcap.b70 == 0x01
 ```
 
 ## Miscellaneous

@@ -87,7 +87,7 @@ int main( int argc , char **argv ){
 	int len_frame;
 
 	// Capture a legitimate FTM-Response frame to recover its original timestamps.
-	printf("Wating for an FTM-Response...\n");
+	printf("Waiting for an FTM-Response...\n");
 	for(;;){
 	
 		// Capture the next packet (using action-frame filter).

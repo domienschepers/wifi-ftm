@@ -22,9 +22,6 @@ fi
 # Configure the interface.
 iw reg set HK
 ifconfig $IFACE down
-if [ "$MODE_FLAG" == "active" ] ; then
-	macchanger -p $IFACE
-fi
 iw $IFACE set $MODE $MODE_FLAG
 ifconfig $IFACE up
 iw dev $IFACE set channel $CHANNEL $BW

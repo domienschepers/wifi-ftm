@@ -85,7 +85,7 @@ int main( int argc , char **argv ){
 	u_char t0[] = {0x00,0x00,0x00,0x00,0x00,0x00}; // Reset.
 
 	// Capture a legitimate FTM-Response frame to recover its data structure.
-	printf("Wating for an FTM-Response...\n");
+	printf("Waiting for an FTM-Response...\n");
 	for(;;){
 	
 		// Capture the next packet (using action-frame filter).

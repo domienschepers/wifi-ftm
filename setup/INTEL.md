@@ -3,7 +3,7 @@
 Example instructions to enable support for Wi-Fi FTM using an Intel Wi-Fi Card.
 
 ## Ubuntu
-Drivers for Wi-Fi FTM require a system running a recent kernel ([examples](README.md#intel-wi-fi-cards)).
+Drivers for Wi-Fi FTM require a system running a recent kernel ([examples](../HARDWARE.md#intel-wi-fi-cards)).
 
 For clean installs, consider Ubuntu Server 21.04 which comes with a stable Linux 5.11 kernel:
 - https://ubuntu.com/blog/ubuntu-server-21-04
@@ -35,6 +35,7 @@ Reboot your system.
 
 The latest Intel firmware versions are available from:
 - https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
+- https://www.intel.com/content/www/us/en/support/articles/000005511/wireless.html
 - https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git
 
 Use the following commands to download, for example, Version 63 for the Intel AX-210:

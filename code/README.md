@@ -1,9 +1,8 @@
-# Code for Wi-Fi FTM
+# Wi-Fi FTM Tools
 
 We provide a number of tools to experiment with, and test for weaknesses and vulnerabilities in, Wi-Fi FTM-enabled Wi-Fi Cards.
 
-Remember to configure your network interface appropriately;
-[learn more on our setup and configuration.](../setup)
+Remember to configure your network interface appropriately; [learn more on our setup and configuration.](../setup)
 
 #### Pre-Requirements
 ```

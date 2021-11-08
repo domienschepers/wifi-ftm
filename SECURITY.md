@@ -12,22 +12,24 @@ We identified the following characteristics and weaknesses in initiating station
 
 | Wi-Fi Card | Firmware | Range <sup>1 | Terminate <sup>2 | PHY-Verif. <sup>3 | Delta Verif. <sup>4 | Retrans. <sup>5 |
 | :--- | :--- | ---: | :---: | :---: | :---: | :---: |
-| Qualcomm Snap. 855 | Unknown | [-22.5,+∞] | Yes | No | No | Yes |
+| Broadcom BCM4375B1 | Unknown | [0,+300] | Yes | No | Yes | Unknown |
+| Qualcomm WCN3990 | Unknown | [-22.5,+∞] | Yes | No | No | Yes |
+| Qualcomm QCA6390 | Unknown | [-22.5,+∞] | Yes | No | No | Yes |
 | Intel AC-8260 | Version 31 | [-∞,+∞] | Yes | No | No | Yes |
 | Intel AC-8260 | Version 36 | [-10,+100] | Yes | No | No | Unknown |
 | Intel AC-8265 | Version 34, 36 | [-10,+100] | Yes | No | No | Unknown |
 | Intel AX-200 | Version 53 | [0,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 55 | [-∞,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 57, 58, 59 | [0,+100] | Yes | No | Yes | Unknown |
-| Intel AX-210 | Version 62, 63 | [-∞,+∞] | Yes | No | No | Yes |
+| Intel AX-210 | Version 62, 63, 66 | [-∞,+∞] | Yes | No | Yes | Yes |
 
-<sup>1</sup> Receiver accepts distance measurements within these bounds, otherwise reports a failed session.
+<sup>1</sup> Receiver accepts distance measurements within these bounds, otherwise reports a failed measurement session.
 
-<sup>2</sup> Receiver accepts frames terminating the session.
+<sup>2</sup> Receiver accepts frames terminating the measurement session.
 
-<sup>3</sup> Receiver accepts frames transmitted under unexpected physical-layer parameters.
+<sup>3</sup> Receiver rejects frames transmitted under unexpected physical-layer parameters.
 
-<sup>4</sup> Receiver accepts frames only within the expected Min Delta FTM window.
+<sup>4</sup> Receiver accepts frames only within the expected Min Delta FTM window, otherwise does not transmit acknowledgement.
 
 <sup>5</sup> Receiver accepts retransmissions and improperly manages timestamps.
 
@@ -35,7 +37,7 @@ We identified the following characteristics and weaknesses in initiating station
 
 We identified the following vulnerabilities in responding stations.
 
-| Wi-Fi Card | Firmware | Wi-Fi FTM Resource Exhaust <sup>1 | Denial of Service <sup>2 |
+| Wi-Fi Card | Firmware | Wi-Fi FTM Resource Exhaust <sup>1 | Denial-of-Service <sup>2 |
 | :--- | :--- | :--- | :--- |
 | Qualcomm IPQ4018 | Unknown | After 16 Open Sessions | Force AP Reboot |
 | Qualcomm IPQ4019 | Unknown | After 16 Open Sessions | Crash 5 GHz Band |
