@@ -26,6 +26,8 @@ From our [2020 and 2021 Datasets](https://github.com/domienschepers/wifi-surveyi
 | | | | 5 GHz | 1.36 % | 0.00 % |
 | October 2021 | US | Boston (Fenway) | 2.4 GHz | 0.00 % | 0.01 % |
 | | | | 5 GHz | 0.37 % | 0.00 % |
+| December 2021 | BE | Limburg (Hasselt) | 2.4 GHz | 0.01 % | 0.01 % |
+| | | | 5 GHz | 0.26 % | 0.00 % |
 
 <sup> Adoption rates for Wi-Fi FTM Responders and Initiators, listed per region and frequency band.
 
