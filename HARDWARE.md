@@ -40,6 +40,7 @@ In order to enable support for Wi-Fi FTM, see the [instructions for Intel Wi-Fi 
 | Intel AX-200 | Version 5.8.0 | Core 59 | Version 59 | Version 5.8 |
 | Intel AX-210 | Version 5.11.0 | Core 62 | Version 62, 63 | Version 5.9 |
 | Intel AX-210 | Version 5.11.0 | Core 63 | Version 66 | Version 5.9 |
+| Intel AX-210 | Version 5.11.0 | Core 64 | Version 67 | Version 5.9 |
 
 <sup>1</sup> https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
 

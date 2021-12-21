@@ -21,7 +21,7 @@ We identified the following characteristics and weaknesses in initiating station
 | Intel AX-200 | Version 53 | [0,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 55 | [-∞,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 57, 58, 59 | [0,+100] | Yes | No | Yes | Unknown |
-| Intel AX-210 | Version 62, 63, 66 | [-∞,+∞] | Yes | No | Yes | Yes |
+| Intel AX-210 | Version 62, 63, 66, 67 | [-∞,+∞] | Yes | No | Yes | Yes |
 
 <sup>1</sup> Receiver accepts distance measurements within these bounds, otherwise reports a failed measurement session.
 
@@ -42,6 +42,11 @@ We identified the following vulnerabilities in responding stations.
 | Qualcomm IPQ4018 | Unknown | After 16 Open Sessions | Force AP Reboot |
 | Qualcomm IPQ4019 | Unknown | After 16 Open Sessions | Crash 5 GHz Band |
 | Qualcomm QCS404 | Unknown | After 16 Open Sessions | Crash 5 GHz Band |
+| Intel AC-8260 | Version 31, 36 | After 32 Open Sessions | No |
+| Intel AC-8265 | Version 34, 36 | After 32 Open Sessions | No |
+| Intel AX-200 | Version 53, 55 | After 32 Open Sessions | No |
+| Intel AX-200 | Version 57, 58, 59 | After 10 Open Sessions | No |
+| Intel AX-210 | Version 62, 63, 66, 67 | After 10 Open Sessions | No |
 
 <sup>1</sup> Exhaust Wi-Fi FTM resources to perform a Denial-of-Service.
 
@@ -50,6 +55,7 @@ We identified the following vulnerabilities in responding stations.
 #### Notes
 
 - For Qualcomm systems, the resource exhaust lasts indefinitely and requires a manual reboot.
+- For Intel systems, the resource exhaust lasts half a minute, and a full minute for firmware Version 57 onwards.
 
 ## Common Vulnerabilities and Exposures (CVE) Identifiers
 
