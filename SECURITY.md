@@ -67,8 +67,10 @@ Our research resulted in a variety of vulnerabilities which were assigned the fo
 | [CVE-2020-11280](https://www.qualcomm.com/company/product-security/bulletins/february-2021-bulletin#_cve-2020-11280) | Denial of service while processing fine timing measurement request (FTMR) frame with<br />reserved bits set in the FTM parameter IE due to improper error handling. |
 | [CVE-2020-11281](https://www.qualcomm.com/company/product-security/bulletins/february-2021-bulletin#_cve-2020-11281) | Allowing RTT frames to be linked with non randomized MAC address by comparing the<br />sequence numbers can lead to information disclosure. |
 | [CVE-2020-11287](https://www.qualcomm.com/company/product-security/bulletins/february-2021-bulletin#_cve-2020-11287) | Allowing RTT frames to be linked with non randomized MAC address by comparing the<br />sequence numbers can lead to information disclosure. |
+| [CVE-2021-0053](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00509.html) | Improper initialization in firmware for some Intel(R) PROSet/Wireless WiFi and Killer(TM) WiFi in Windows 10<br />may allow an authenticated user to potentially enable information disclosure via adjacent access. |
 
 #### Overview of Known Security Updates
+- [Intel Security Advisory](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00509.html) of November 2021.
 - [Qualcomm Security Bulletin](https://www.qualcomm.com/company/product-security/bulletins/february-2021-bulletin) of February 2021.
 - [Android Security Bulletin](https://source.android.com/security/bulletin/2021-02-01) of February 2021, including the Qualcomm mitigations.
 - [ASUS RT-AC58U](https://www.asus.com/Networking-IoT-Servers/WiFi-Routers/ASUS-WiFi-Routers/RT-AC58U/HelpDesk_BIOS/) and [ASUS RT-ACRH13](https://www.asus.com/us/Networking-IoT-Servers/WiFi-Routers/ASUS-WiFi-Routers/RT-ACRH13/HelpDesk_BIOS/) firmware updates mitigate their denial-of-service vulnerability.
