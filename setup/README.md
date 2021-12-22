@@ -2,13 +2,14 @@
 
 We provide an overview of the various setup and configurations we confirmed to work, and provide some practical tips and tricks.
 
-Are you configuring Wi-Fi FTM on an Intel Card? See the detailed [instructions for Intel Wi-Fi Cards](INTEL.md).
+- Are you configuring Wi-Fi FTM on an Intel Card? See the [instructions for Intel Wi-Fi Cards](INTEL.md).
+- Are you configuring Wi-Fi FTM on an Android? See the [instructions for Android](ANDROID.md).
 
 ## Setting up a Wi-Fi FTM Initiator
 
-On Android, [WifiRttScan](https://play.google.com/store/apps/details?id=com.google.android.apps.location.rtt.wifirttscan) can be used to initiate distance measurements ([source](https://github.com/android/connectivity-samples/tree/main/WifiRttScan)).
-
 The following configuration assumes a Linux-based system.
+
+For more information on Android, see the [instructions for Android](ANDROID.md).
 
 #### Configuration
 Using ```iw``` Version 5.9, a configuration file has the following options:

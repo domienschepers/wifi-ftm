@@ -59,8 +59,8 @@ We purchased the NGW models and evaluated them on a variety of systems supportin
   
 ## Smartphones
 
-We tested for support on the following Android smartphones using [WifiRttScan](https://play.google.com/store/apps/details?id=com.google.android.apps.location.rtt.wifirttscan) ([source](https://github.com/android/connectivity-samples/tree/main/WifiRttScan)).
-  
+We tested for support on the following Android smartphones:
+
 | Device | Wi-Fi Card <sup>1 | Android |
 | :--- | :--- | :--- |
 | Google Pixel 4 XL (G020J) | Qualcomm WCN3990 | Android 10, 11, 12 |
@@ -70,6 +70,8 @@ We tested for support on the following Android smartphones using [WifiRttScan](h
 <sup>1</sup> Though not explicitely stated by the vendors, kernel debug messages refer to these respective cards.
 
 Presumably Android 9 and up support Wi-Fi FTM, though not all versions were explicitely tested.
+
+For more information on Android, see the [instructions for Android](setup/ANDROID.md).
 
 ## Access Points
 
