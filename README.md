@@ -26,11 +26,14 @@ For example, to modify the distance measured by an initiating station.
 
 For more information, see [Wi-Fi FTM Tools](code/).
 
-## Publication
+## Publications
 
-This work was published at ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec '21):
+ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec 2021):
 
-- [Here, There, and Everywhere: Security Analysis of Wi-Fi Fine Timing Measurement](https://dl.acm.org/doi/10.1145/3448300.3467828)
+- Here, There, and Everywhere: Security Analysis of Wi-Fi Fine Timing Measurement ([pdf](https://aanjhan.com/assets/schepers_ftm_wisec21.pdf), [acm](https://dl.acm.org/doi/10.1145/3448300.3467828))
+
+Proceedings on Privacy Enhancing Technologies (PETS 2022):
+- Privacy-Preserving Positioning in Wi-Fi Fine Timing Measurement ([pdf](https://petsymposium.org/2022/files/papers/issue2/popets-2022-0048.pdf))
 
 ## Conclusion
 
