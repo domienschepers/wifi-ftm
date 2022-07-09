@@ -21,7 +21,7 @@ We identified the following characteristics and weaknesses in initiating station
 | Intel AX-200 | Version 53 | [0,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 55 | [-∞,+∞] | Yes | No | No | Yes |
 | Intel AX-200 | Version 57, 58, 59 | [0,+100] | Yes | No | Yes | Unknown |
-| Intel AX-210 | Version 62, 63, 66, 67 | [-∞,+∞] | Yes | No | Yes | Yes |
+| Intel AX-210 | Version 62, 63, 66-68, 71, 73 | [-∞,+∞] | Yes | No | Yes | Yes |
 
 <sup>1</sup> Receiver accepts distance measurements within these bounds, otherwise reports a failed measurement session.
 
@@ -46,7 +46,7 @@ We identified the following vulnerabilities in responding stations.
 | Intel AC-8265 | Version 34, 36 | After 32 Open Sessions | No |
 | Intel AX-200 | Version 53, 55 | After 32 Open Sessions | No |
 | Intel AX-200 | Version 57, 58, 59 | After 10 Open Sessions | No |
-| Intel AX-210 | Version 62, 63, 66, 67 | After 10 Open Sessions | No |
+| Intel AX-210 | Version 62, 63, 66-68, 71, 73 | After 10 Open Sessions | No |
 
 <sup>1</sup> Exhaust Wi-Fi FTM resources to perform a Denial-of-Service.
 
