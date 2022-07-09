@@ -4,7 +4,7 @@ Here we provide basic yet useful beginner instructions and information for Wi-Fi
 
 #### Support
 
-Wi-Fi FTM is supported since Android 9 (API level 28) and later.
+Wi-Fi FTM is supported since Android 9 (API level 28) and later, with new features coming in Android 13 (API level 33).
 
 In our [hardware overview](../HARDWARE.md#smartphones), we verified its support on a variety of smartphones.
 

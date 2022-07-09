@@ -41,6 +41,7 @@ In order to enable support for Wi-Fi FTM, see the [instructions for Intel Wi-Fi 
 | Intel AX-210 | Version 5.11.0 | Core 62 | Version 62, 63 | Version 5.9 |
 | Intel AX-210 | Version 5.11.0 | Core 63 | Version 66 | Version 5.9 |
 | Intel AX-210 | Version 5.11.0 | Core 64 | Version 67 | Version 5.9 |
+| Intel AX-210 | Version 5.18.0 | Core 71 | Version 68, 71, 73 | Version 5.16 |
 
 <sup>1</sup> https://wireless.wiki.kernel.org/en/users/drivers/iwlwifi
 
@@ -65,7 +66,7 @@ We tested for support on the following Android smartphones:
 | :--- | :--- | :--- |
 | Google Pixel 4 XL (G020J) | Qualcomm WCN3990 | Android 10, 11, 12 |
 | Xiaomi Mi 10T 5G (M2007J3SY) | Qualcomm QCA6390 | Android 11 (MIUI 12.5.1.0) |
-| Samsung Galaxy Note 10 (SM-N970U) | Broadcom BCM4375B1 | Android 11 |
+| Samsung Galaxy Note 10 (SM-N970U) | Broadcom BCM4375B1 | Android 11, 12 |
 
 <sup>1</sup> Though not explicitely stated by the vendors, kernel debug messages refer to these respective cards.
 
