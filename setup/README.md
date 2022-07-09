@@ -110,9 +110,9 @@ if (!ftm[NL80211_PMSR_FTM_RESP_ATTR_DIST_AVG] \
 	printf("      DEBUG_DIST_AVG: %lld\n", dist_avg );
 }
 ```
-It will print the one-way distance measurement result, calculated from the reported average round-trip time.
+It will print the one-way distance measurement result in centimeter, calculated from the reported average round-trip time.
 
-We provide a patch, which can be applied to ```iw``` Version 5.9: 
+We provide patches which can be applied to ```iw``` Version 5.9 and Version 5.19. For example:
 ```
-patch < iw-5.9-ftm-dist-avg.patch
+patch < iw-5.19-ftm-dist-avg.patch
 ```
