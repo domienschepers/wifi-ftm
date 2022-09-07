@@ -64,7 +64,7 @@ We tested for support on the following Android smartphones:
 
 | Device | Wi-Fi Card <sup>1 | Android |
 | :--- | :--- | :--- |
-| Google Pixel 4 XL (G020J) | Qualcomm WCN3990 | Android 10, 11, 12 |
+| Google Pixel 4 XL (G020J) | Qualcomm WCN3990 | Android 10, 11, 12, 13 |
 | Xiaomi Mi 10T 5G (M2007J3SY) | Qualcomm QCA6390 | Android 11 (MIUI 12.5.1.0) |
 | Samsung Galaxy Note 10 (SM-N970U) | Broadcom BCM4375B1 | Android 11, 12 |
 
