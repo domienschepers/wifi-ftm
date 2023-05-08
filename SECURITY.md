@@ -57,6 +57,15 @@ We identified the following vulnerabilities in responding stations.
 - For Qualcomm systems, the resource exhaust lasts indefinitely and requires a manual reboot.
 - For Intel systems, the resource exhaust lasts half a minute, and a full minute for firmware Version 57 onwards.
 
+## Miscellaneous
+
+We identified issues in the Linux kernel which incorrectly buffer Wi-Fi FTM frames when a station is in power-save mode.
+
+This issue has been fixed since Linux kernel 6.4-rc1 in the following commit:
+- [wifi: ieee80211: correctly mark FTM frames non-bufferable](https://github.com/torvalds/linux/commit/2c9abe653bc5134eeab411c46dde008d8a1c37b0)
+
+For more details, refer to our research paper in Section 4.2 ([pdf](https://papers.mathyvanhoef.com/usenix2023-wifi.pdf), [repository](https://github.com/domienschepers/wifi-framing)).
+
 ## Common Vulnerabilities and Exposures (CVE) Identifiers
 
 Our research resulted in a variety of vulnerabilities which were assigned the following CVE Identifiers.

@@ -35,6 +35,9 @@ ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec 20
 Proceedings on Privacy Enhancing Technologies (PETS 2022):
 - Privacy-Preserving Positioning in Wi-Fi Fine Timing Measurement ([pdf](https://petsymposium.org/2022/files/papers/issue2/popets-2022-0048.pdf))
 
+USENIX Security 2023:
+- Framing Frames: Bypassing Wi-Fi Encryption by Manipulating Transmit Queues ([pdf](https://papers.mathyvanhoef.com/usenix2023-wifi.pdf), [repository](https://github.com/domienschepers/wifi-framing))
+
 ## Conclusion
 
 Wi-Fi FTM is not secure, and we discourage its usage for security-sensitive applications.
