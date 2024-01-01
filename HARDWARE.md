@@ -14,6 +14,7 @@ In summary, we confirmed the following products support Wi-Fi FTM either as an i
 | Intel AX-200 | None | Yes | Yes <sup>1 |
 | Intel AX-210 | None | Yes | Yes <sup>1 |
 | Broadcom BCM4375B1 | Samsung Galaxy Note 10 (SM-N970U) | Yes | No |
+| Broadcom BCM4398 | Google Pixel 8 (GA04803) | Yes | No |
 | Qualcomm WCN3990 | Google Pixel 4 XL (G020J) | Yes | No |
 | Qualcomm QCA6390 | Xiaomi Mi 10T 5G (M2007J3SY) | Yes | No |
 | Qualcomm IPQ4018 | ASUS RT-ARCH13 AP (MSQ-RTACRH00) | No  | Yes |
@@ -67,6 +68,7 @@ We tested for support on the following Android smartphones:
 | Google Pixel 4 XL (G020J) | Qualcomm WCN3990 | Android 10, 11, 12, 13 |
 | Xiaomi Mi 10T 5G (M2007J3SY) | Qualcomm QCA6390 | Android 11 (MIUI 12.5.1.0) |
 | Samsung Galaxy Note 10 (SM-N970U) | Broadcom BCM4375B1 | Android 11, 12 |
+| Google Pixel 8 (GA04803) | Broadcom BCM4398 | Android 14 | 
 
 <sup>1</sup> Though not explicitely stated by the vendors, kernel debug messages refer to these respective cards.
 
